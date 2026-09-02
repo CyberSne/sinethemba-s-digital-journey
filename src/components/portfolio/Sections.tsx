@@ -191,7 +191,7 @@ export function Education() {
 }
 
 export function Certifications() {
-  const icons = [Award, FileBadge, BadgeCheck, MonitorSmartphone, Award];
+  const icons: LucideIcon[] = [Award, FileBadge, BadgeCheck, MonitorSmartphone, Award];
 
   return (
     <Section id="certifications" muted>
@@ -203,7 +203,7 @@ export function Certifications() {
 
       <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {CERTIFICATIONS.map((cert, i) => {
-          const Icon = icons[i % icons.length];
+          const Icon = icons[i % icons.length] as LucideIcon;
           return (
             <Reveal key={cert.title} delay={i * 70}>
               <article className="card-elevated h-full p-6">
