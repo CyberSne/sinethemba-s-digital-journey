@@ -4,6 +4,9 @@ import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { NAV_LINKS } from "./data";
+import cvAsset from "@/assets/sinethemba-lokwe-cv.pdf.asset.json";
+
+const cv = cvAsset.url;
 
 export function Nav() {
   const [scrolled, setScrolled] = useState(false);
@@ -52,7 +55,7 @@ export function Nav() {
 
         <div className="flex items-center gap-2">
           <Button asChild size="sm" variant={scrolled ? "default" : "onNavy"} className="hidden sm:inline-flex">
-            <a href="/sinethemba-lokwe-cv.txt" download>
+            <a href={cv} download="Sinethemba-Lokwe-CV.pdf">
               Download CV
             </a>
           </Button>
@@ -86,7 +89,7 @@ export function Nav() {
             ))}
             <li>
               <Button asChild size="sm" className="mt-2 w-full">
-                <a href="/sinethemba-lokwe-cv.txt" download>
+                <a href={cv} download="Sinethemba-Lokwe-CV.pdf">
                   Download CV
                 </a>
               </Button>
