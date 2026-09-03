@@ -89,7 +89,7 @@ export function Nav() {
             ))}
             <li>
               <Button asChild size="sm" className="mt-2 w-full">
-                <a href="/sinethemba-lokwe-cv.txt" download>
+                <a href={cv} download="Sinethemba-Lokwe-CV.pdf">
                   Download CV
                 </a>
               </Button>
