@@ -55,7 +55,7 @@ export function Nav() {
 
         <div className="flex items-center gap-2">
           <Button asChild size="sm" variant={scrolled ? "default" : "onNavy"} className="hidden sm:inline-flex">
-            <a href="/sinethemba-lokwe-cv.txt" download>
+            <a href={cv} download="Sinethemba-Lokwe-CV.pdf">
               Download CV
             </a>
           </Button>

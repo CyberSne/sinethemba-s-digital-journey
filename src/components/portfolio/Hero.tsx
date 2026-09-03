@@ -45,7 +45,7 @@ export function Hero() {
               </a>
             </Button>
             <Button asChild size="lg" variant="onNavy">
-              <a href="/SINETHEMBA%20LOKWE.pdf" download>
+              <a href={cv} download="Sinethemba-Lokwe-CV.pdf">
                 <Download /> Download CV
               </a>
             </Button>
