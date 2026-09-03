@@ -4,6 +4,9 @@ import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { NAV_LINKS } from "./data";
+import cvAsset from "@/assets/sinethemba-lokwe-cv.pdf.asset.json";
+
+const cv = cvAsset.url;
 
 export function Nav() {
   const [scrolled, setScrolled] = useState(false);

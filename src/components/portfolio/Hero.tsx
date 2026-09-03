@@ -1,8 +1,12 @@
 import { ArrowRight, Download, Github, Linkedin, Mail } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
-import profile from "@/assets/profile.jpg";
+import profileAsset from "@/assets/sinethemba-lokwe.jpg.asset.json";
+import cvAsset from "@/assets/sinethemba-lokwe-cv.pdf.asset.json";
 import { CONTACT } from "./data";
+
+const profile = profileAsset.url;
+const cv = cvAsset.url;
 
 export function Hero() {
   return (
